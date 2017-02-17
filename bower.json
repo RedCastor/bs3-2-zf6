@@ -23,8 +23,10 @@
     "test",
     "tests"
   ],
-  "dependencies": {},
+  "dependencies": {
+	"foundation-sites": "6.3.0"
+  },
   "devDependencies": {
-    "foundation-sites": "6.3.0"
+
   }
 }
