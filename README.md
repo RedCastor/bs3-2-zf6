@@ -6,8 +6,12 @@ Bootstrap 2 Zurb Foundation 6
 **[Demo][]**
 
 
-Credits
-------------
+## Installing
+```
+bower install bs2zf6
+```
+
+
 
 [Demo]: http://redcastor.github.io/bs2zf6/demo/
 [Foundation 6]: https://foundation.zurb.com/sites/docs/

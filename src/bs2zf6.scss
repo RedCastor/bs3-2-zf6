@@ -2,14 +2,15 @@
 // Extend class Bootstrap to Foundation 6
 // --------------------------------------------------
 
-// Color Palette
+//==Color Palette Variables
 $brand-primary:         $primary-color;
 $brand-success:         $success-color;
 $brand-info:            $secondary-color;
 $brand-warning:         $warning-color;
 $brand-danger:          $alert-color;
 
-//State Form
+
+//==State Form Variables
 $state-success-text:             #3c763d !default;
 $state-success-bg:               #dff0d8 !default;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
@@ -27,11 +28,11 @@ $state-danger-bg:                #f2dede !default;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
 
 
-//Typo
+//==Typography Variables
 $line-height-computed:           $global-lineheight;
 
 
-//Font
+//==Font Variables
 $font-family-sans-serif:  $body-font-family;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
@@ -46,7 +47,7 @@ $font-family-base:        $font-family-sans-serif !default;
 //@include make-grid(lg);
 
 
-// Container and Container Fluid
+//==Container and Container Fluid
 .container {
   @include grid-column-row;
   clear: both !important;
@@ -61,7 +62,9 @@ $font-family-base:        $font-family-sans-serif !default;
 
   margin-right: auto;
   margin-left: auto;
+}
 
+.container, .container-fluid {
   .row {
     @include grid-row-size(expand);
 
@@ -78,14 +81,14 @@ $font-family-base:        $font-family-sans-serif !default;
       }
     }
     @else if type-of($gutter) == 'number' and strip-unit($gutter) > 0 {
-      $padding: rem-calc($gutter) / 2;
+      $margin: rem-calc($gutter) / 2;
       margin-left: -$margin;
       margin-right: -$margin;
     }
   }
 }
 
-//Position
+//==Position
 .center-block {
   display: block;
   margin-left: auto;
@@ -98,14 +101,19 @@ $font-family-base:        $font-family-sans-serif !default;
   float: right !important;
 }
 
-// Buttons
+//==Buttons
 .btn {
   @include button;
 
   // Sizes
   @each $size, $value in map-remove($button-sizes, default) {
-    @if ($size == small) {
+    @if ($size == tiny) {
       &.btn-xs {
+        font-size: $value;
+      }
+    }
+    @if ($size == small) {
+      &.btn-sm {
         font-size: $value;
       }
     }
@@ -114,6 +122,10 @@ $font-family-base:        $font-family-sans-serif !default;
         font-size: $value;
       }
     }
+  }
+
+  &.btn-block {
+    @include button-expand;
   }
 
   &.btn-default {
@@ -129,10 +141,13 @@ $font-family-base:        $font-family-sans-serif !default;
     @include button-hollow;
     @include button-hollow-style($primary-color);
     border: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
-// Labels
+//==Labels
 .label {
   &.label-default {
     background: $label-background;
@@ -160,6 +175,7 @@ $font-family-base:        $font-family-sans-serif !default;
   }
 }
 
+//==Alert
 .alert {
   &.alert-default {
     @include callout;
@@ -187,7 +203,7 @@ $font-family-base:        $font-family-sans-serif !default;
   }
 }
 
-// Forms
+//==Forms
 .form-group {
   @include foundation-form-fieldset;
 }
@@ -198,14 +214,14 @@ $font-family-base:        $font-family-sans-serif !default;
   @extend .input-group-button;
 }
 
-// Typography
+//==Typography
 .page-header {
   padding-bottom: $header-margin-bottom;
   margin: $hr-margin;
   border-bottom: $hr-border;
 }
 
-//List
+//==List
 // [converter] extracted from `.list-unstyled` for libsass compatibility
 @mixin list-unstyled {
   padding-left: 0;
@@ -225,8 +241,7 @@ $font-family-base:        $font-family-sans-serif !default;
   }
 }
 
-
-// Image shapes
+//==Image shapes
 .img-circle {
   border-radius: 50%;
 }
