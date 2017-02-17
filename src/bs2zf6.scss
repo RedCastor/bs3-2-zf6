@@ -1,0 +1,232 @@
+//
+// Extend class Bootstrap to Foundation 6
+// --------------------------------------------------
+
+// Color Palette
+$brand-primary:         $primary-color;
+$brand-success:         $success-color;
+$brand-info:            $secondary-color;
+$brand-warning:         $warning-color;
+$brand-danger:          $alert-color;
+
+//State Form
+$state-success-text:             #3c763d !default;
+$state-success-bg:               #dff0d8 !default;
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:                #31708f !default;
+$state-info-bg:                  #d9edf7 !default;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:             #8a6d3b !default;
+$state-warning-bg:               #fcf8e3 !default;
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:              #a94442 !default;
+$state-danger-bg:                #f2dede !default;
+$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+
+//Typo
+$line-height-computed:           $global-lineheight;
+
+
+//Font
+$font-family-sans-serif:  $body-font-family;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+
+// Make grid
+//@include make-grid(xs);
+//@include make-grid(sm);
+//@include make-grid(md);
+//@include make-grid(lg);
+
+
+// Container and Container Fluid
+.container {
+  @include grid-column-row;
+  clear: both !important;
+  float: none !important;
+}
+
+.container-fluid {
+  @include grid-col;
+
+  clear: both !important;
+  float: none !important;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  .row {
+    @include grid-row-size(expand);
+
+    // Gutters
+    $gutter: $grid-column-gutter;
+    @if type-of($gutter) == 'map' {
+      @each $breakpoint, $value in $gutter {
+        $margin: rem-calc($value) / 2;
+
+        @include breakpoint($breakpoint) {
+          margin-left: -$margin;
+          margin-right: -$margin;
+        }
+      }
+    }
+    @else if type-of($gutter) == 'number' and strip-unit($gutter) > 0 {
+      $padding: rem-calc($gutter) / 2;
+      margin-left: -$margin;
+      margin-right: -$margin;
+    }
+  }
+}
+
+//Position
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+
+// Buttons
+.btn {
+  @include button;
+
+  // Sizes
+  @each $size, $value in map-remove($button-sizes, default) {
+    @if ($size == small) {
+      &.btn-xs {
+        font-size: $value;
+      }
+    }
+    @if ($size == large) {
+      &.btn-lg {
+        font-size: $value;
+      }
+    }
+  }
+
+  &.btn-default {
+    @include button-hollow;
+    @include button-hollow-style($primary-color);
+  }
+  &.btn-primary { @include button-style($primary-color, auto, auto); }
+  &.btn-info    { @include button-style($secondary-color, auto, auto); }
+  &.btn-success { @include button-style($success-color, auto, auto); }
+  &.btn-warning { @include button-style($warning-color, auto, auto); }
+  &.btn-danger  { @include button-style($alert-color, auto, auto); }
+  &.btn-link    {
+    @include button-hollow;
+    @include button-hollow-style($primary-color);
+    border: none;
+  }
+}
+
+// Labels
+.label {
+  &.label-default {
+    background: $label-background;
+    color: $label-color;
+  }
+  &.label-primary {
+    background: $primary-color;
+    color: $label-color;
+  }
+  &.label-info    {
+    background: $secondary-color;
+    color: $label-color;
+  }
+  &.label-success {
+    background: $success-color;
+    color: $label-color;
+  }
+  &.label-warning {
+    background: $warning-color;
+    color: $label-color;
+  }
+  &.label-danger  {
+    background: $alert-color;
+    color: $label-color;
+  }
+}
+
+.alert {
+  &.alert-default {
+    @include callout;
+    @include callout-style($callout-background);
+  }
+  &.alert-primary {
+    @include callout;
+    @include callout-style($primary-color);
+  }
+  &.alert-info    {
+    @include callout;
+    @include callout-style($secondary-color);
+  }
+  &.alert-success {
+    @include callout;
+    @include callout-style($success-color);
+  }
+  &.alert-warning {
+    @include callout;
+    @include callout-style($warning-color);
+  }
+  &.alert-danger  {
+    @include callout;
+    @include callout-style($alert-color);
+  }
+}
+
+// Forms
+.form-group {
+  @include foundation-form-fieldset;
+}
+.input-group input {
+  @extend .input-group-field;
+}
+.input-group-btn {
+  @extend .input-group-button;
+}
+
+// Typography
+.page-header {
+  padding-bottom: $header-margin-bottom;
+  margin: $hr-margin;
+  border-bottom: $hr-border;
+}
+
+//List
+// [converter] extracted from `.list-unstyled` for libsass compatibility
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-unstyled {
+  @include list-unstyled;
+}
+.list-inline {
+  @include list-unstyled;
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+
+// Image shapes
+.img-circle {
+  border-radius: 50%;
+}

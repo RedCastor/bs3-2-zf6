@@ -1,0 +1,30 @@
+{
+  "name": "bs2zf6",
+  "version": "1.0.0",
+  "author": "Auban le Grelle <auban@viamonkey.com>",
+  "homepage": "https://redcastor.io",
+  "description": "",
+  "license": "MIT",
+  "keywords": [
+    "bootstrap",
+    "foundation",
+    "converter"
+  ],
+  "main": [
+    "src/bs2zf6.scss"
+  ],
+  "ignore": [
+    "**/.*",
+    "**/*.txt",
+    ".jscsrc",
+    ".jshintrc",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "foundation-sites": "6.3.0"
+  }
+}
