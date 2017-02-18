@@ -1,5 +1,5 @@
 {
-  "name": "bs2zf6",
+  "name": "bs3-2-zf6",
   "version": "1.0.0",
   "author": "Auban le Grelle <auban@viamonkey.com>",
   "homepage": "https://redcastor.io",
@@ -11,7 +11,7 @@
     "converter"
   ],
   "main": [
-    "src/bs2zf6.scss"
+    "src/bs3-2-zf6.scss"
   ],
   "ignore": [
     "**/.*",

@@ -1,0 +1,30 @@
+//
+// Labels
+// --------------------------------------------------
+
+.label {
+  &.label-default {
+    background: $label-background;
+    color: $label-color;
+  }
+  &.label-primary {
+    background: $primary-color;
+    color: $label-color;
+  }
+  &.label-info    {
+    background: $secondary-color;
+    color: $label-color;
+  }
+  &.label-success {
+    background: $success-color;
+    color: $label-color;
+  }
+  &.label-warning {
+    background: $warning-color;
+    color: $label-color;
+  }
+  &.label-danger  {
+    background: $alert-color;
+    color: $label-color;
+  }
+}

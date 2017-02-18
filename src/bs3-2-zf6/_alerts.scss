@@ -1,0 +1,30 @@
+//
+// Alerts
+// --------------------------------------------------
+
+.alert {
+  &.alert-default {
+    @include callout;
+    @include callout-style($callout-background);
+  }
+  &.alert-primary {
+    @include callout;
+    @include callout-style($primary-color);
+  }
+  &.alert-info    {
+    @include callout;
+    @include callout-style($secondary-color);
+  }
+  &.alert-success {
+    @include callout;
+    @include callout-style($success-color);
+  }
+  &.alert-warning {
+    @include callout;
+    @include callout-style($warning-color);
+  }
+  &.alert-danger  {
+    @include callout;
+    @include callout-style($alert-color);
+  }
+}

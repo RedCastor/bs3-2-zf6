@@ -1,0 +1,20 @@
+//
+// Forms
+// --------------------------------------------------
+
+.form-group {
+  @include foundation-form-fieldset;
+}
+.input-group input {
+  @extend .input-group-field;
+}
+.input-group-btn {
+  @extend .input-group-button;
+}
+
+//==Typography
+.page-header {
+  padding-bottom: $header-margin-bottom;
+  margin: $hr-margin;
+  border-bottom: $hr-border;
+}

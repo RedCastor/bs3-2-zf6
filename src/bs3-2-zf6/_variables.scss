@@ -1,0 +1,40 @@
+//
+// Varibales Bootstrap 3 to Foundation 6
+// --------------------------------------------------
+
+//==Color Palette Variables
+$brand-primary:                  $primary-color;
+$brand-success:                  $success-color;
+$brand-info:                     $secondary-color;
+$brand-warning:                  $warning-color;
+$brand-danger:                   $alert-color;
+
+
+//==State Form Variables
+$state-success-text:             #3c763d !default;
+$state-success-bg:               #dff0d8 !default;
+$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+
+$state-info-text:                #31708f !default;
+$state-info-bg:                  #d9edf7 !default;
+$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+
+$state-warning-text:             #8a6d3b !default;
+$state-warning-bg:               #fcf8e3 !default;
+$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+
+$state-danger-text:              #a94442 !default;
+$state-danger-bg:                #f2dede !default;
+$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+
+//==Typography Variables
+$line-height-computed:           $global-lineheight;
+
+
+//==Font Variables
+$font-family-sans-serif:         $body-font-family;
+$font-family-serif:              Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:          Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:               $font-family-sans-serif !default;

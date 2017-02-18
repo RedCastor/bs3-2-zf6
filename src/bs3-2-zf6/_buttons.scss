@@ -1,0 +1,48 @@
+//
+// Buttons
+// --------------------------------------------------
+
+.btn {
+  @include button;
+
+  // Sizes
+  @each $size, $value in map-remove($button-sizes, default) {
+    @if ($size == tiny) {
+      &.btn-xs {
+        font-size: $value;
+      }
+    }
+    @if ($size == small) {
+      &.btn-sm {
+        font-size: $value;
+      }
+    }
+    @if ($size == large) {
+      &.btn-lg {
+        font-size: $value;
+      }
+    }
+  }
+
+  &.btn-block {
+    @include button-expand;
+  }
+
+  &.btn-default {
+    @include button-hollow;
+    @include button-hollow-style($primary-color);
+  }
+  &.btn-primary { @include button-style($primary-color, auto, auto); }
+  &.btn-info    { @include button-style($secondary-color, auto, auto); }
+  &.btn-success { @include button-style($success-color, auto, auto); }
+  &.btn-warning { @include button-style($warning-color, auto, auto); }
+  &.btn-danger  { @include button-style($alert-color, auto, auto); }
+  &.btn-link    {
+    @include button-hollow;
+    @include button-hollow-style($primary-color);
+    border: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

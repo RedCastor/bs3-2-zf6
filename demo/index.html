@@ -9,6 +9,7 @@
     <link rel="apple-touch-icon" href="dist/images/icon.png">
     <!-- Place favicon.ico in the root directory -->
 
+    <link rel="stylesheet" href="dist/styles/foundation_bs3-2-zf6.css">
     <link rel="stylesheet" href="dist/styles/main.css">
     <script src="dist/scripts/jquery.js"></script>
 </head>
@@ -21,10 +22,10 @@
 
 <header class="container-fluid header-main">
     <div class="row">
-        <div class="small-12 column">
+        <div class="small-12">
             <div class="text-center">
-                <h1 class="page-header">BS2ZF6</h1>
-                <h3><small>Bootstrap 2 Zurb Foundation 6 convertion classes.</small></h3>
+                <h1 class="page-header">BS3-2-ZF6</h1>
+                <h3><small>Bootstrap 3 to Zurb Foundation 6 convertion css and components.</small></h3>
                 <p>This is container-fluid class <code>.container-fluid</code></p>
             </div>
         </div>
@@ -33,21 +34,36 @@
 <main>
     <div class="container">
         <div class="row">
-            <section class="small-12 column">
+            <section class="col-xs-12">
                 <header>
-                    <h2 class="page-header">Alert</h2>
+                    <h2 class="page-header">Overview</h2>
                 </header>
-                <div class="small-8 medium-6 center-block">
-                    <div class="alert alert-success">
+                <p>This a is container <code>.container</code></p>
+            </section>
+            <section class="col-xs-12">
+                <header>
+                    <h2 class="page-header">Alerts</h2>
+                </header>
+                <div class="center-block" style="width: 50%;">
+                    <div class="alert alert-success" role="alert">
                         <p>This is a centered block with class <code>.center-block"</code> in a bootstrap alert <code>.alert.alert-success</code></p>
+                    </div>
+                    <div class="alert alert-info" role="alert">
+                        <p>This is a centered block with class <code>.center-block"</code> in a bootstrap alert <code>.alert.alert-info</code></p>
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                        <p>This is a centered block with class <code>.center-block"</code> in a bootstrap alert <code>.alert.alert-warning</code></p>
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        <p>This is a centered block with class <code>.center-block"</code> in a bootstrap alert <code>.alert.alert-danger</code></p>
                     </div>
                 </div>
             </section>
-            <section class="small-12 column">
+            <section class="col-xs-12">
                 <header>
                     <h2 class="page-header">Position</h2>
                 </header>
-                <div class="small-4 pull-left">
+                <div class="col-xs-4 pull-left">
                     <h3>Pull Left</h3>
                     <p>
                         Class <code>.pull-left</code>
@@ -59,7 +75,7 @@
                         Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
                     </p>
                 </div>
-                <div class="small-4 pull-right">
+                <div class="col-xs-4 pull-right">
                     <h3>Pull Right</h3>
                     <p>
                         Class <code>.pull-right</code>
@@ -72,52 +88,74 @@
                     </p>
                 </div>
             </section>
-            <section class="small-12 column">
+            <section class="col-xs-12">
                 <header>
                     <h2 class="page-header">Buttons</h2>
                 </header>
-                <p>Button class <code>.btn.btn-default</code></p>
-                <p>
-                    <a class="btn btn-default" href="#" role="button">Link</a>
-                    <button class="btn btn-default" type="submit">Button</button>
-                    <input class="btn btn-default" type="button" value="Input">
-                    <input class="btn btn-default" type="submit" value="Submit">
-                </p>
-                <p>Button class <code>.btn.btn-primary</code>, <code>.btn.btn-default</code>, ...</p>
-                <p>
-                    <button type="button" class="btn btn-default">Default</button>
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-success">Success</button>
-                    <button type="button" class="btn btn-info">Info = Secondary</button>
-                    <button type="button" class="btn btn-warning">Warning</button>
-                    <button type="button" class="btn btn-danger">Danger</button>
-                    <button type="button" class="btn btn-link">Link</button>
-                </p>
-                <p>Button class <code>.btn.btn-primary.btn-lg</code></p>
-                <p>
-                    <button type="button" class="btn btn-primary btn-lg">Large button</button>
-                    <button type="button" class="btn btn-default btn-lg">Large button</button>
-                </p>
-                <p>Button class <code>.btn.btn-primary</code></p>
-                <p>
-                    <button type="button" class="btn btn-primary">Default button</button>
-                    <button type="button" class="btn btn-default">Default button</button>
-                </p>
-                <p>Button class <code>.btn.btn-primary.btn-sm</code></p>
-                <p>
-                    <button type="button" class="btn btn-primary btn-sm">Small button</button>
-                    <button type="button" class="btn btn-default btn-sm">Small button</button>
-                </p>
-                <p>Button class <code>.btn.btn-primary.btn-xs</code></p>
-                <p>
-                    <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
-                    <button type="button" class="btn btn-default btn-xs">Extra small button</button>
-                </p>
-                <p>Button class <code>.btn.btn-primary.btn-block</code></p>
-                <p>
-                    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                    <button type="button" class="btn btn-default btn-sm btn-block">Block level small button</button>
-                </p>
+                <div class="col-xs-12 col-md-4">
+                    <p>Button class <code>.btn.btn-default</code></p>
+                    <p>
+                        <a class="btn btn-default" href="#" role="button">Link</a>
+                        <button class="btn btn-default" type="submit">Button</button>
+                        <input class="btn btn-default" type="button" value="Input">
+                        <input class="btn btn-default" type="submit" value="Submit">
+                    </p>
+                    <p>Button class <code>.btn.btn-primary</code>, <code>.btn.btn-default</code>, ...</p>
+                    <p>
+                        <button type="button" class="btn btn-default">Default</button>
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-success">Success</button>
+                        <button type="button" class="btn btn-info">Info = Secondary</button>
+                        <button type="button" class="btn btn-warning">Warning</button>
+                        <button type="button" class="btn btn-danger">Danger</button>
+                        <button type="button" class="btn btn-link">Link</button>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <p>Button class <code>.btn.btn-primary.btn-lg</code></p>
+                    <p>
+                        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                        <button type="button" class="btn btn-default btn-lg">Large button</button>
+                    </p>
+                    <p>Button class <code>.btn.btn-primary</code></p>
+                    <p>
+                        <button type="button" class="btn btn-primary">Default button</button>
+                        <button type="button" class="btn btn-default">Default button</button>
+                    </p>
+                    <p>Button class <code>.btn.btn-primary.btn-sm</code></p>
+                    <p>
+                        <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                        <button type="button" class="btn btn-default btn-sm">Small button</button>
+                    </p>
+                    <p>Button class <code>.btn.btn-primary.btn-xs</code></p>
+                    <p>
+                        <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+                        <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <p>Button class <code>.btn.btn-primary.btn-block</code></p>
+                    <p>
+                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                        <button type="button" class="btn btn-default btn-sm btn-block">Block level small button</button>
+                    </p>
+                </div>
+            </section>
+            <section class="col-xs-12">
+                <header>
+                    <h2 class="page-header">Labels</h2>
+                </header>
+                <div class="col-xs-12">
+                    <p>Label class <code>.label.label-default</code>, <code>.label.label-primary</code>, ...</p>
+                    <p>
+                        <span class="label label-default">Default</span>
+                        <span class="label label-primary">Primary</span>
+                        <span class="label label-success">Success</span>
+                        <span class="label label-info">Info = Secondary</span>
+                        <span class="label label-warning">Warning</span>
+                        <span class="label label-danger">Danger</span>
+                    </p>
+                </div>
             </section>
         </div>
     </div>
