@@ -7,7 +7,26 @@
     $list: "#{$list}, .col-#{$class}-#{$i}";
   }
   #{$list} {
-    @include grid-col;
+    @if ($class == xs) {
+      @include breakpoint(small) {
+        @include grid-col($i);
+      }
+    }
+    @else if ($class == sm) {
+      @include breakpoint(small) {
+        @include grid-col($i);
+      }
+    }
+    @else if ($class == md) {
+      @include breakpoint(medium) {
+        @include grid-col($i);
+      }
+    }
+    @else if ($class == lg) {
+      @include breakpoint(large) {
+        @include grid-col($i);
+      }
+    }
   }
 }
 
