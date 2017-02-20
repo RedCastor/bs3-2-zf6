@@ -1,0 +1,57 @@
+//
+// Grid Framework
+// --------------------------------------------------
+
+
+// Framework grid generation
+//
+// Used only by Bootstrap to generate the correct number of grid classes given
+// any value of `$grid-columns`.
+@mixin make-grid-columns($i: 1, $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}") {
+  @for $i from (1 + 1) through $grid-column-count {
+    $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
+  }
+  #{$list} {
+    @include grid-col($i);
+  }
+}
+
+
+@mixin calc-grid-column($index, $class, $type) {
+  @if ($type == width) and ($index > 0) {
+    .col-#{$class}-#{$index} {
+      @include grid-col-size($index);
+    }
+  }
+  @if ($type == push) and ($index >= 0) {
+    .col-#{$class}-push-#{$index} {
+      @include grid-col-pos($index);
+    }
+  }
+  @if ($type == pull) and ($index >= 0) {
+    .col-#{$class}-pull-#{$index} {
+     @include grid-col-pos(-$index);
+    }
+  }
+  @if ($type == offset) {
+    .col-#{$class}-offset-#{$index} {
+      @include grid-column-offset($index);
+    }
+  }
+}
+
+// [converter] This is defined recursively in LESS, but Sass supports real loops
+@mixin loop-grid-columns($columns, $class, $type) {
+  @for $i from 0 through $columns {
+    @include calc-grid-column($i, $class, $type);
+  }
+}
+
+
+// Create grid for specific class
+@mixin make-grid($class) {
+  @include loop-grid-columns($grid-column-count, $class, width);
+  @include loop-grid-columns($grid-column-count - 1, $class, pull);
+  @include loop-grid-columns($grid-column-count - 1, $class, push);
+  @include loop-grid-columns($grid-column-count - 1, $class, offset);
+}

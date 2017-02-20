@@ -1,0 +1,22 @@
+//
+// Navs
+// --------------------------------------------------
+
+
+.nav {
+  @extend .menu;
+  @extend .menu-hover;
+  @include menu-direction(vertical);
+}
+
+.nav-pills {
+  @include menu-direction;
+}
+
+.nav-stacked {
+  @include menu-direction(vertical);
+}
+
+.nav-justified {
+  @include menu-expand;
+}

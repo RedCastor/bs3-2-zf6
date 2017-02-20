@@ -1,0 +1,12 @@
+//
+// Pagination
+// --------------------------------------------------
+
+.pagination {
+  > .active > a,
+  > .active > span {
+    & {
+      @include pagination-item-current;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 Bootstrap 3 to Zurb Foundation 6
 =============================
 
-[Bootstrap][] [Foundation 6][] Bootstrap 3 to Zurb Foundation 6 Style. Convert css and components from Bootstrap 3 to Foundation 6. **No Javascript!**
+[Bootstrap][] [Foundation 6][] Bootstrap 3 to Zurb Foundation 6 Bridge. CSS and Components bridge from Bootstrap 3 to Foundation 6. **No Javascript!**
 
 **[Demo][]**
 

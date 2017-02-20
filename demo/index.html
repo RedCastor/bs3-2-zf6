@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Bootstrap to Zurb Foundation 6 Style. Convert css and components  from Bootstrap to Foundation 6</title>
+    <title>Bootstrap to Zurb Foundation 6 Bridge. CSS and Components bridge from Bootstrap to Foundation 6</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="dist/images/icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="dist/styles/foundation_bs3-2-zf6.css">
+    <link rel="stylesheet" href="dist/styles/foundation.css">
+    <link rel="stylesheet" href="../dist/bs3-2-zf6.css">
     <link rel="stylesheet" href="dist/styles/main.css">
     <script src="dist/scripts/jquery.js"></script>
 </head>
@@ -25,7 +26,7 @@
         <div class="small-12">
             <div class="text-center">
                 <h1 class="page-header">BS3-2-ZF6</h1>
-                <h3><small>Bootstrap 3 to Zurb Foundation 6 conversion css and components.</small></h3>
+                <h3><small>Bootstrap 3 to Zurb Foundation 6 CSS and Components Bridge.</small></h3>
                 <p>This is container-fluid class <code>.container-fluid</code></p>
                 <a class="btn btn-default btn-lg" href="https://github.com/RedCastor/bs3-2-zf6"><i class="fa fa-github"></i>&nbsp;&nbsp;View on GitHub</a>
                 <a class="btn btn-default btn-lg" href="https://github.com/RedCastor/bs3-2-zf6/releases"><i class="fa fa-download"></i>&nbsp;&nbsp;Download</a>
@@ -50,34 +51,58 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="alert alert-info" role="alert">
-                            <p><code>.col-xs-12.col-md-6.col-lg-4"</code></p>
+                            <p>.col-xs-12 .col-md-6 .col-lg-4</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="alert alert-info" role="alert">
-                            <p><code>.col-xs-12.col-md-6.col-lg-4"</code></p>
+                            <p>.col-xs-12 .col-md-6 .col-lg-4</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="alert alert-info" role="alert">
-                            <p><code>.col-xs-12.col-md-6.col-lg-4"</code></p>
+                            <p>.col-xs-12 .col-md-6 .col-lg-4</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-6 col-md-5 col-lg-7">
+                    <div class="col-xs-6 col-md-3 col-lg-2">
                         <div class="alert alert-info" role="alert">
-                            <p><code>.col-xs-12.col-md-6.col-lg-4"</code></p>
+                            <p>.col-xs-6 .col-md-5 .col-lg-2</p>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-md-4 col-lg-2">
+                    <div class="col-xs-6 col-md-3 col-lg-2">
                         <div class="alert alert-info" role="alert">
-                            <p><code>.col-xs-12.col-md-6.col-lg-4"</code></p>
+                            <p>.col-xs-6 .col-md-4 .col-lg-2</p>
                         </div>
                     </div>
                     <div class="col-xs-6 col-md-3 col-lg-3">
                         <div class="alert alert-info" role="alert">
-                            <p><code>.col-xs-12.col-md-6.col-lg-4"</code></p>
+                            <p>.col-xs-6 .col-md-3 .col-lg-3</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 col-lg-5">
+                        <div class="alert alert-info" role="alert">
+                            <p>.col-xs-6 .col-md-3 .col-lg-5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-md-push-6">
+                        <div class="alert alert-info" role="alert">
+                            <p>.col-xs-12 .col-md-6 .col-md-push-6</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-md-pull-6">
+                        <div class="alert alert-info" role="alert">
+                            <p>.col-xs-12 .col-md-6 .col-md-pull-6</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-xs-offset-6">
+                        <div class="alert alert-info" role="alert">
+                            <p>.col-xs-6 .col-xs-offset-6</p>
                         </div>
                     </div>
                 </div>
@@ -105,98 +130,199 @@
                 <header>
                     <h2 class="page-header">Position</h2>
                 </header>
-                <div class="col-xs-4 pull-left">
-                    <h3>Pull Left</h3>
-                    <p>
-                        Class <code>.pull-left</code>
-                        <br>
-                        Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+                <div class="row">
+                    <div class="col-xs-4 pull-left">
+                        <h3>Pull Left</h3>
+                        <p>
+                            Class <code>.pull-left</code>
+                            <br>
+                            Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
 
-                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
 
-                        Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-                    </p>
-                </div>
-                <div class="col-xs-4 pull-right">
-                    <h3>Pull Right</h3>
-                    <p>
-                        Class <code>.pull-right</code>
-                        <br>
-                        Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+                            Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                        </p>
+                    </div>
+                    <div class="col-xs-4 pull-right">
+                        <h3>Pull Right</h3>
+                        <p>
+                            Class <code>.pull-right</code>
+                            <br>
+                            Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
 
-                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
 
-                        Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-                    </p>
+                            Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                        </p>
+                    </div>
                 </div>
             </section>
             <section class="col-xs-12">
                 <header>
                     <h2 class="page-header">Buttons</h2>
                 </header>
-                <div class="col-xs-12 col-md-4">
-                    <p>Button class <code>.btn.btn-default</code></p>
-                    <p>
-                        <a class="btn btn-default" href="#" role="button">Link</a>
-                        <button class="btn btn-default" type="submit">Button</button>
-                        <input class="btn btn-default" type="button" value="Input">
-                        <input class="btn btn-default" type="submit" value="Submit">
-                    </p>
-                    <p>Button class <code>.btn.btn-primary</code>, <code>.btn.btn-default</code>, ...</p>
-                    <p>
-                        <button type="button" class="btn btn-default">Default</button>
-                        <button type="button" class="btn btn-primary">Primary</button>
-                        <button type="button" class="btn btn-success">Success</button>
-                        <button type="button" class="btn btn-info">Info = Secondary</button>
-                        <button type="button" class="btn btn-warning">Warning</button>
-                        <button type="button" class="btn btn-danger">Danger</button>
-                        <button type="button" class="btn btn-link">Link</button>
-                    </p>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <p>Button class <code>.btn.btn-primary.btn-lg</code></p>
-                    <p>
-                        <button type="button" class="btn btn-primary btn-lg">Large button</button>
-                        <button type="button" class="btn btn-default btn-lg">Large button</button>
-                    </p>
-                    <p>Button class <code>.btn.btn-primary</code></p>
-                    <p>
-                        <button type="button" class="btn btn-primary">Default button</button>
-                        <button type="button" class="btn btn-default">Default button</button>
-                    </p>
-                    <p>Button class <code>.btn.btn-primary.btn-sm</code></p>
-                    <p>
-                        <button type="button" class="btn btn-primary btn-sm">Small button</button>
-                        <button type="button" class="btn btn-default btn-sm">Small button</button>
-                    </p>
-                    <p>Button class <code>.btn.btn-primary.btn-xs</code></p>
-                    <p>
-                        <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
-                        <button type="button" class="btn btn-default btn-xs">Extra small button</button>
-                    </p>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <p>Button class <code>.btn.btn-primary.btn-block</code></p>
-                    <p>
-                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                        <button type="button" class="btn btn-default btn-sm btn-block">Block level small button</button>
-                    </p>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <p>Button class <code>.btn .btn-default</code></p>
+                        <p>
+                            <a class="btn btn-default" href="#" role="button">Link</a>
+                            <button class="btn btn-default" type="submit">Button</button>
+                            <input class="btn btn-default" type="button" value="Input">
+                            <input class="btn btn-default" type="submit" value="Submit">
+                        </p>
+                        <p>Button class <code>.btn .btn-primary</code>, <code>.btn .btn-default</code>, ...</p>
+                        <p>
+                            <button type="button" class="btn btn-default">Default</button>
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <button type="button" class="btn btn-success">Success</button>
+                            <button type="button" class="btn btn-info">Info = Secondary</button>
+                            <button type="button" class="btn btn-warning">Warning</button>
+                            <button type="button" class="btn btn-danger">Danger</button>
+                            <button type="button" class="btn btn-link">Link</button>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <p>Button class <code>.btn .btn-primary .btn-lg</code></p>
+                        <p>
+                            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                            <button type="button" class="btn btn-default btn-lg">Large button</button>
+                        </p>
+                        <p>Button class <code>.btn .btn-primary</code></p>
+                        <p>
+                            <button type="button" class="btn btn-primary">Default button</button>
+                            <button type="button" class="btn btn-default">Default button</button>
+                        </p>
+                        <p>Button class <code>.btn .btn-primary .btn-sm</code></p>
+                        <p>
+                            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                            <button type="button" class="btn btn-default btn-sm">Small button</button>
+                        </p>
+                        <p>Button class <code>.btn .btn-primary .btn-xs</code></p>
+                        <p>
+                            <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+                            <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <p>Button class <code>.btn .btn-primary .btn-block</code></p>
+                        <p>
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                            <button type="button" class="btn btn-default btn-sm btn-block">Block level small button</button>
+                        </p>
+                    </div>
                 </div>
             </section>
             <section class="col-xs-12">
                 <header>
                     <h2 class="page-header">Labels</h2>
                 </header>
-                <div class="col-xs-12">
-                    <p>Label class <code>.label.label-default</code>, <code>.label.label-primary</code>, ...</p>
-                    <p>
-                        <span class="label label-default">Default</span>
-                        <span class="label label-primary">Primary</span>
-                        <span class="label label-success">Success</span>
-                        <span class="label label-info">Info = Secondary</span>
-                        <span class="label label-warning">Warning</span>
-                        <span class="label label-danger">Danger</span>
-                    </p>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>Label class <code>.label .label-default</code>, <code>.label .label-primary</code>, ...</p>
+                        <p>
+                            <span class="label label-default">Default</span>
+                            <span class="label label-primary">Primary</span>
+                            <span class="label label-success">Success</span>
+                            <span class="label label-info">Info = Secondary</span>
+                            <span class="label label-warning">Warning</span>
+                            <span class="label label-danger">Danger</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="col-xs-12">
+                <header>
+                    <h2 class="page-header">Navs</h2>
+                </header>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <p>Nav Pills <code>.nav .nav-pills</code></p>
+                        <P>
+                            <ul class="nav nav-pills">
+                                <li role="presentation" class="active"><a href="#">Home</a></li>
+                                <li role="presentation"><a href="#">Profile</a></li>
+                                <li role="presentation"><a href="#">Messages</a></li>
+                            </ul>
+                        </P>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <p>Nav Pills Justified <code>.nav .nav-pills .nav-justified</code></p>
+                        <p>
+                        <ul class="nav nav-pills nav-justified">
+                            <li role="presentation" class="active"><a href="#">Home</a></li>
+                            <li role="presentation"><a href="#">Profile</a></li>
+                            <li role="presentation"><a href="#">Messages</a></li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <p>Nav Pills Stacked<code>.nav .nav-pills .nav-stacked</code></p>
+                        <p>
+                            <ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
+                                <li role="presentation" class="active"><a href="#">Home</a></li>
+                                <li role="presentation"><a href="#">Profile</a></li>
+                                <li role="presentation"><a href="#">Messages</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="col-xs-12">
+                <header>
+                    <h2 class="page-header">Pagination</h2>
+                </header>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>Class for pagination <code>.pagination</code>. Current page <code class="html">&lt;li class="active"&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;</code></p>
+                        <P>
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li class="active"><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </P>
+                    </div>
+                </div>
+            </section>
+            <section class="col-xs-12">
+                <header>
+                    <h2 class="page-header">Responsive utilities</h2>
+                </header>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="alert alert-success visible-xs" role="alert">
+                            <p>Visible on small <code>.visible-xs"</code></p>
+                        </div>
+                        <div class="alert alert-success visible-md" role="alert">
+                            <p>Visible on medium <code>.visible-md"</code></p>
+                        </div>
+                        <div class="alert alert-success visible-lg" role="alert">
+                            <p>Visible on large <code>.visible-lg"</code></p>
+                        </div>
+                        <div class="alert alert-warning hidden-xs" role="alert">
+                            <p>Hidden on small <code>.hidden-xs"</code></p>
+                        </div>
+                        <div class="alert alert-warning hidden-md" role="alert">
+                            <p>Hidden on medium <code>.hidden-md"</code></p>
+                        </div>
+                        <div class="alert alert-warning hidden-lg" role="alert">
+                            <p>Hidden on large <code>.hidden-lg"</code></p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
