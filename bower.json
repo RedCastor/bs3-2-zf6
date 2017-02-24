@@ -11,7 +11,8 @@
     "converter"
   ],
   "main": [
-    "dist/bs3-2-zf6.css"
+    "dist/bs3-2-zf6.css",
+    "src/bs3-2-zf6.scss"
   ],
   "ignore": [
     "**/.*",
