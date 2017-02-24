@@ -48,6 +48,7 @@
                 <header>
                     <h2 class="page-header">Grid</h2>
                 </header>
+                <p>Attention in foundation there is no "sm" column. The "sm" column is equal to "md" medium screen.</p>
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="alert alert-info" role="alert">
@@ -113,15 +114,19 @@
                 </header>
                 <div class="center-block" style="width: 50%;">
                     <div class="alert alert-success" role="alert">
+                        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <p>This is a centered block with class <code>.center-block"</code> in a bootstrap alert <code>.alert.alert-success</code></p>
                     </div>
                     <div class="alert alert-info" role="alert">
+                        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <p>This is a centered block with class <code>.center-block"</code> in a bootstrap alert <code>.alert.alert-info</code></p>
                     </div>
                     <div class="alert alert-warning" role="alert">
+                        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <p>This is a centered block with class <code>.center-block"</code> in a bootstrap alert <code>.alert.alert-warning</code></p>
                     </div>
                     <div class="alert alert-danger" role="alert">
+                        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <p>This is a centered block with class <code>.center-block"</code> in a bootstrap alert <code>.alert.alert-danger</code></p>
                     </div>
                 </div>
@@ -295,6 +300,85 @@
                                 </ul>
                             </nav>
                         </P>
+                    </div>
+                </div>
+            </section>
+            <section class="col-xs-12">
+                <header>
+                    <h2 class="page-header">Tabs</h2>
+                </header>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation" class="is-active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#">Help</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="col-xs-12">
+                <header>
+                    <h2 class="page-header">Forms</h2>
+                </header>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <form>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">@</span>
+                                    <input type="email" placeholder="Email" class="form-control" id="exampleInputEmail">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="button">Go!</button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Pass</span>
+                                    <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFile">File input</label>
+                                <input type="file" id="exampleInputFile">
+                                <p class="help-block">Example block-level help text here.</p>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Check me out
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                                <div class="input-group">
+                                    <div class="input-group-addon">$</div>
+                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                                    <div class="input-group-addon">.00</div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Transfer cash</button>
+                        </form>
                     </div>
                 </div>
             </section>

@@ -18,7 +18,7 @@
 //
 // Columns, offsets, pushes, and pulls for the small device range, from phones
 // to tablets.
-@include breakpoint(small) {
+@include breakpoint(medium) {
   @include make-grid(sm);
 }
 

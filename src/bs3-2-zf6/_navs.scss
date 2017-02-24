@@ -6,17 +6,37 @@
 .nav {
   @extend .menu;
   @extend .menu-hover;
-  @include menu-direction(vertical);
+  @include clearfix;
+
+  &.nav-stacked {
+    @include menu-direction(vertical);
+  }
+
+  &.nav-justified {
+    @include menu-expand;
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
 }
 
 .nav-pills {
-  @include menu-direction;
+  @include menu-direction(horizontal);
 }
 
-.nav-stacked {
-  @include menu-direction(vertical);
-}
 
-.nav-justified {
-  @include menu-expand;
+.nav-tabs {
+  @include tabs-container;
+  > li > a {
+    padding: 0;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  li {
+    @include tabs-title;
+  }
 }

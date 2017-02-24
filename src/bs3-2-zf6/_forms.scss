@@ -8,6 +8,9 @@
 .input-group input {
   @extend .input-group-field;
 }
+.input-group-addon {
+  @extend .input-group-label;
+}
 .input-group-btn {
   @extend .input-group-button;
 }

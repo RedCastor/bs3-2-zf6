@@ -12,6 +12,7 @@
     $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
   }
   #{$list} {
+    position: relative;
     @include grid-col($i);
   }
 }

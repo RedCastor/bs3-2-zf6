@@ -23,20 +23,20 @@
 }
 
 .visible-sm {
-  @include show-for-only(small);
+  @include show-for-only(medium);
 }
 .visible-sm-block {
-  @include breakpoint(small) {
+  @include breakpoint(medium) {
     display: block !important;
   }
 }
 .visible-sm-inline {
-  @include breakpoint(small) {
+  @include breakpoint(medium) {
     display: inline !important;
   }
 }
 .visible-sm-inline-block {
-  @include breakpoint(small) {
+  @include breakpoint(medium) {
     display: inline-block !important;
   }
 }
@@ -83,7 +83,7 @@
   @include hide-for-only(small);
 }
 .hidden-sm {
-  @include hide-for-only(small);
+  @include hide-for-only(medium);
 }
 .hidden-md {
   @include hide-for-only(medium);
