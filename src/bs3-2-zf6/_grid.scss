@@ -43,17 +43,10 @@
 //==Container and Container Fluid
 .container {
   @include grid-col-row;
-  @include clearfix;
 }
 
 .container-fluid {
   @include grid-col;
-  @include clearfix;
-
-  float: none !important;
-
-  margin-right: auto;
-  margin-left: auto;
 
   .row {
     @include grid-row-size(expand);
@@ -62,6 +55,13 @@
 
 // Gutters
 .container, .container-fluid {
+  @include clearfix;
+
+  float: none !important;
+
+  margin-right: auto;
+  margin-left: auto;
+
   .row {
     $gutter: $grid-column-gutter;
     @if type-of($gutter) == 'map' {
