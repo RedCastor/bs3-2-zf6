@@ -12,7 +12,7 @@
     $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
   }
   #{$list} {
-    @include grid-col($i);
+    @include grid-column-gutter($gutters: $grid-column-gutter);
     position: relative;
     min-height: 1px;
   }
@@ -22,7 +22,7 @@
 @mixin calc-grid-column($index, $class, $type) {
   @if ($type == width) and ($index > 0) {
     .col-#{$class}-#{$index} {
-      @include grid-col-size($index);
+      @include grid-col($index);
     }
   }
   @if ($type == push) and ($index >= 0) {
@@ -32,7 +32,7 @@
   }
   @if ($type == pull) and ($index >= 0) {
     .col-#{$class}-pull-#{$index} {
-     @include grid-col-pos(-$index);
+      @include grid-col-pos(-$index);
     }
   }
   @if ($type == offset) {
