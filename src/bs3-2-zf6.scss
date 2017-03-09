@@ -1,23 +1,27 @@
 /**
  * Bootstrap 3 to Foundation 6 by RedCastor
- * Version 1.0-b2
+ * Version 1.0-b4
  * redcastor.io
  * Licensed under MIT Open Source
  */
 
 // Core variables and mixins
 @import "bs3-2-zf6/variables";
-@import "bs3-2-zf6/mixins";
+@import "bs3-2-zf6/mixins/grid-framework";
+@import "bs3-2-zf6/mixins/list-group";
+@import "bs3-2-zf6/mixins/image";
 
 // Core CSS
 @import "bs3-2-zf6/buttons";
 @import "bs3-2-zf6/forms";
 
 // Components
-@import "bs3-2-zf6/grid";
 @import "bs3-2-zf6/types";
+@import "bs3-2-zf6/scaffolding";
+@import "bs3-2-zf6/grid";
 @import "bs3-2-zf6/alerts";
 @import "bs3-2-zf6/labels";
+@import "bs3-2-zf6/list-group";
 @import "bs3-2-zf6/navs";
 @import "bs3-2-zf6/pagination";
 @import "bs3-2-zf6/close";

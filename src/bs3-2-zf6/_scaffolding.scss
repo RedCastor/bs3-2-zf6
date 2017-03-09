@@ -1,0 +1,34 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+// Images
+// Responsive images (ensure images don't scale beyond their parents)
+.img-responsive {
+  @include img-responsive;
+}
+
+// Rounded corners
+.img-rounded {
+  border-radius: $global-radius;
+}
+
+// Image thumbnails
+//
+// Heads up! This is mixin-ed into thumbnails.less for `.thumbnail`.
+.img-thumbnail {
+  padding: $thumbnail-padding;
+  line-height: $global-lineheight;
+  background-color: $thumbnail-bg;
+  border: $thumbnail-border;
+  border-radius: $thumbnail-border-radius;
+  transition: all .2s ease-in-out;
+
+  // Keep them at most 100% wide
+  @include img-responsive(inline-block);
+}
+
+// Perfect circle
+.img-circle {
+  border-radius: 50%; // set radius in percents
+}
