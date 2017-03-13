@@ -5,6 +5,9 @@ Bootstrap 3 to Zurb Foundation 6
 
 **[Demo][]**
 
+## Bridge Versions
+
+Bootstrap v3.3.7 &rarr; v6.3.0
 
 ## Installing
 ```
