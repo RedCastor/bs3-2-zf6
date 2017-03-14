@@ -1999,76 +1999,101 @@ button.list-group-item-danger {
     display: none !important; } }
 
 .visible-xs-block {
-  display: block !important; }
+  display: none !important; }
+  @media screen and (max-width: 39.9375em) {
+    .visible-xs-block {
+      display: block !important; } }
 
 .visible-xs-inline {
-  display: inline !important; }
+  display: none !important; }
+  @media screen and (max-width: 39.9375em) {
+    .visible-xs-inline {
+      display: inline !important; } }
 
-.visible-xs-inline-block {
-  display: inline-block !important; }
+@media screen and (max-width: 39.9375em) {
+  .visible-xs-inline-block {
+    display: inline-block !important; } }
 
 @media screen and (max-width: 39.9375em), screen and (min-width: 64em) {
   .visible-sm {
     display: none !important; } }
 
-@media print, screen and (min-width: 40em) {
-  .visible-sm-block {
-    display: block !important; } }
+.visible-sm-block {
+  display: none !important; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .visible-sm-block {
+      display: block !important; } }
 
-@media print, screen and (min-width: 40em) {
-  .visible-sm-inline {
-    display: inline !important; } }
+.visible-sm-inline {
+  display: none !important; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .visible-sm-inline {
+      display: inline !important; } }
 
-@media print, screen and (min-width: 40em) {
-  .visible-sm-inline-block {
-    display: inline-block !important; } }
+.visible-sm-inline-block {
+  display: none !important; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .visible-sm-inline-block {
+      display: inline-block !important; } }
 
 @media screen and (max-width: 39.9375em), screen and (min-width: 64em) {
   .visible-md {
     display: none !important; } }
 
-@media print, screen and (min-width: 40em) {
-  .visible-md-block {
-    display: block !important; } }
+.visible-md-block {
+  display: none !important; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .visible-md-block {
+      display: block !important; } }
 
-@media print, screen and (min-width: 40em) {
-  .visible-md-inline {
-    display: inline !important; } }
+.visible-md-inline {
+  display: none !important; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .visible-md-inline {
+      display: inline !important; } }
 
-@media print, screen and (min-width: 40em) {
-  .visible-md-inline-block {
-    display: inline-block !important; } }
+.visible-md-inline-block {
+  display: none !important; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .visible-md-inline-block {
+      display: inline-block !important; } }
 
 @media screen and (max-width: 63.9375em) {
   .visible-lg {
     display: none !important; } }
 
-@media print, screen and (min-width: 64em) {
-  .visible-lg-block {
-    display: block !important; } }
+.visible-lg-block {
+  display: none !important; }
+  @media print, screen and (min-width: 64em) {
+    .visible-lg-block {
+      display: block !important; } }
+
+.visible-lg-inline {
+  display: none !important; }
+  @media print, screen and (min-width: 64em) {
+    .visible-lg-inline {
+      display: inline !important; } }
+
+.visible-lg-inline-block {
+  display: none !important; }
+  @media print, screen and (min-width: 64em) {
+    .visible-lg-inline-block {
+      display: inline-block !important; } }
 
 @media print, screen and (min-width: 64em) {
-  .visible-lg-inline {
-    display: inline !important; } }
-
-@media print, screen and (min-width: 64em) {
-  .visible-lg-inline-block {
-    display: inline-block !important; } }
-
-@media screen and (max-width: 39.9375em) {
-  .hidden-xs {
-    display: none !important; } }
-
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  .hidden-sm {
+  .hidden-lg {
     display: none !important; } }
 
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   .hidden-md {
     display: none !important; } }
 
-@media print, screen and (min-width: 64em) {
-  .hidden-lg {
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .hidden-sm {
+    display: none !important; } }
+
+@media screen and (max-width: 39.9375em) {
+  .hidden-xs {
     display: none !important; } }
 
 /*# sourceMappingURL=bs3-2-zf6.css.map */

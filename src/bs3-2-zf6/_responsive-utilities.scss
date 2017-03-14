@@ -7,17 +7,21 @@
 }
 
 .visible-xs-block {
-  @include breakpoint(small) {
+  display: none !important;
+
+  @include breakpoint(small only) {
     display: block !important;
   }
 }
 .visible-xs-inline {
-  @include breakpoint(small) {
+  display: none !important;
+
+  @include breakpoint(small only) {
     display: inline !important;
   }
 }
 .visible-xs-inline-block {
-  @include breakpoint(small) {
+  @include breakpoint(small only) {
     display: inline-block !important;
   }
 }
@@ -26,17 +30,23 @@
   @include show-for-only(medium);
 }
 .visible-sm-block {
-  @include breakpoint(medium) {
+  display: none !important;
+
+  @include breakpoint(medium only) {
     display: block !important;
   }
 }
 .visible-sm-inline {
-  @include breakpoint(medium) {
+  display: none !important;
+
+  @include breakpoint(medium only) {
     display: inline !important;
   }
 }
 .visible-sm-inline-block {
-  @include breakpoint(medium) {
+  display: none !important;
+
+  @include breakpoint(medium only) {
     display: inline-block !important;
   }
 }
@@ -45,17 +55,23 @@
   @include show-for-only(medium);
 }
 .visible-md-block {
-  @include breakpoint(medium) {
+  display: none !important;
+
+  @include breakpoint(medium only) {
     display: block !important;
   }
 }
 .visible-md-inline {
-  @include breakpoint(medium) {
+  display: none !important;
+
+  @include breakpoint(medium only) {
     display: inline !important;
   }
 }
 .visible-md-inline-block {
-  @include breakpoint(medium) {
+  display: none !important;
+
+  @include breakpoint(medium only) {
     display: inline-block !important;
   }
 }
@@ -64,30 +80,38 @@
   @include show-for(large);
 }
 .visible-lg-block {
+  display: none !important;
+
   @include breakpoint(large) {
     display: block !important;
   }
 }
 .visible-lg-inline {
+  display: none !important;
+
   @include breakpoint(large) {
     display: inline !important;
   }
 }
 .visible-lg-inline-block {
+  display: none !important;
+
   @include breakpoint(large) {
     display: inline-block !important;
   }
 }
 
-.hidden-xs {
-  @include hide-for-only(small);
-}
-.hidden-sm {
-  @include hide-for-only(medium);
+.hidden-lg {
+  @include hide-for(large);
 }
 .hidden-md {
   @include hide-for-only(medium);
 }
-.hidden-lg {
-  @include hide-for(large);
+.hidden-sm {
+  @include hide-for-only(medium);
 }
+.hidden-xs {
+  @include hide-for-only(small);
+}
+
+
