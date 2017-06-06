@@ -307,10 +307,16 @@ select {
       display: block; } }
   .menu.simple li, .simple.nav li {
     display: inline-block;
-    margin-right: 1rem;
+    vertical-align: top;
     line-height: 1; }
   .menu.simple a, .simple.nav a {
     padding: 0; }
+  .menu.simple li, .simple.nav li {
+    margin-left: 0;
+    margin-right: 1rem; }
+  .menu.simple.align-right li, .simple.align-right.nav li {
+    margin-right: 0;
+    margin-left: 1rem; }
   .menu.align-right::before, .align-right.nav::before, .menu.align-right::after, .align-right.nav::after {
     display: table;
     content: ' '; }
@@ -350,7 +356,8 @@ select {
 .menu-centered {
   text-align: center; }
   .menu-centered > .menu, .menu-centered > .nav {
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: top; }
 
 .no-js [data-responsive-menu] ul {
   display: none; }
@@ -521,6 +528,8 @@ select {
       padding-left: 0.9375rem; } }
   .col-xs-1:last-child:not(:first-child) {
     float: right; }
+  .col-xs-1:last-child:last-child {
+    float: left; }
 
 .col-xs-2 {
   width: 16.6666666667%;
@@ -533,6 +542,8 @@ select {
       padding-left: 0.9375rem; } }
   .col-xs-2:last-child:not(:first-child) {
     float: right; }
+  .col-xs-2:last-child:last-child {
+    float: left; }
 
 .col-xs-3 {
   width: 25%;
@@ -545,6 +556,8 @@ select {
       padding-left: 0.9375rem; } }
   .col-xs-3:last-child:not(:first-child) {
     float: right; }
+  .col-xs-3:last-child:last-child {
+    float: left; }
 
 .col-xs-4 {
   width: 33.3333333333%;
@@ -557,6 +570,8 @@ select {
       padding-left: 0.9375rem; } }
   .col-xs-4:last-child:not(:first-child) {
     float: right; }
+  .col-xs-4:last-child:last-child {
+    float: left; }
 
 .col-xs-5 {
   width: 41.6666666667%;
@@ -569,6 +584,8 @@ select {
       padding-left: 0.9375rem; } }
   .col-xs-5:last-child:not(:first-child) {
     float: right; }
+  .col-xs-5:last-child:last-child {
+    float: left; }
 
 .col-xs-6 {
   width: 50%;
@@ -581,6 +598,8 @@ select {
       padding-left: 0.9375rem; } }
   .col-xs-6:last-child:not(:first-child) {
     float: right; }
+  .col-xs-6:last-child:last-child {
+    float: left; }
 
 .col-xs-7 {
   width: 58.3333333333%;
@@ -593,6 +612,8 @@ select {
       padding-left: 0.9375rem; } }
   .col-xs-7:last-child:not(:first-child) {
     float: right; }
+  .col-xs-7:last-child:last-child {
+    float: left; }
 
 .col-xs-8 {
   width: 66.6666666667%;
@@ -605,6 +626,8 @@ select {
       padding-left: 0.9375rem; } }
   .col-xs-8:last-child:not(:first-child) {
     float: right; }
+  .col-xs-8:last-child:last-child {
+    float: left; }
 
 .col-xs-9 {
   width: 75%;
@@ -617,6 +640,8 @@ select {
       padding-left: 0.9375rem; } }
   .col-xs-9:last-child:not(:first-child) {
     float: right; }
+  .col-xs-9:last-child:last-child {
+    float: left; }
 
 .col-xs-10 {
   width: 83.3333333333%;
@@ -629,6 +654,8 @@ select {
       padding-left: 0.9375rem; } }
   .col-xs-10:last-child:not(:first-child) {
     float: right; }
+  .col-xs-10:last-child:last-child {
+    float: left; }
 
 .col-xs-11 {
   width: 91.6666666667%;
@@ -641,6 +668,8 @@ select {
       padding-left: 0.9375rem; } }
   .col-xs-11:last-child:not(:first-child) {
     float: right; }
+  .col-xs-11:last-child:last-child {
+    float: left; }
 
 .col-xs-12 {
   width: 100%;
@@ -653,6 +682,8 @@ select {
       padding-left: 0.9375rem; } }
   .col-xs-12:last-child:not(:first-child) {
     float: right; }
+  .col-xs-12:last-child:last-child {
+    float: left; }
 
 .col-xs-pull-0 {
   position: relative;
@@ -800,6 +831,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-sm-1:last-child:not(:first-child) {
       float: right; }
+    .col-sm-1:last-child:last-child {
+      float: left; }
   .col-sm-2 {
     width: 16.6666666667%;
     float: left;
@@ -813,6 +846,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-sm-2:last-child:not(:first-child) {
       float: right; }
+    .col-sm-2:last-child:last-child {
+      float: left; }
   .col-sm-3 {
     width: 25%;
     float: left;
@@ -826,6 +861,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-sm-3:last-child:not(:first-child) {
       float: right; }
+    .col-sm-3:last-child:last-child {
+      float: left; }
   .col-sm-4 {
     width: 33.3333333333%;
     float: left;
@@ -839,6 +876,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-sm-4:last-child:not(:first-child) {
       float: right; }
+    .col-sm-4:last-child:last-child {
+      float: left; }
   .col-sm-5 {
     width: 41.6666666667%;
     float: left;
@@ -852,6 +891,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-sm-5:last-child:not(:first-child) {
       float: right; }
+    .col-sm-5:last-child:last-child {
+      float: left; }
   .col-sm-6 {
     width: 50%;
     float: left;
@@ -865,6 +906,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-sm-6:last-child:not(:first-child) {
       float: right; }
+    .col-sm-6:last-child:last-child {
+      float: left; }
   .col-sm-7 {
     width: 58.3333333333%;
     float: left;
@@ -878,6 +921,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-sm-7:last-child:not(:first-child) {
       float: right; }
+    .col-sm-7:last-child:last-child {
+      float: left; }
   .col-sm-8 {
     width: 66.6666666667%;
     float: left;
@@ -891,6 +936,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-sm-8:last-child:not(:first-child) {
       float: right; }
+    .col-sm-8:last-child:last-child {
+      float: left; }
   .col-sm-9 {
     width: 75%;
     float: left;
@@ -904,6 +951,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-sm-9:last-child:not(:first-child) {
       float: right; }
+    .col-sm-9:last-child:last-child {
+      float: left; }
   .col-sm-10 {
     width: 83.3333333333%;
     float: left;
@@ -917,6 +966,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-sm-10:last-child:not(:first-child) {
       float: right; }
+    .col-sm-10:last-child:last-child {
+      float: left; }
   .col-sm-11 {
     width: 91.6666666667%;
     float: left;
@@ -930,6 +981,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-sm-11:last-child:not(:first-child) {
       float: right; }
+    .col-sm-11:last-child:last-child {
+      float: left; }
   .col-sm-12 {
     width: 100%;
     float: left;
@@ -943,6 +996,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-sm-12:last-child:not(:first-child) {
       float: right; }
+    .col-sm-12:last-child:last-child {
+      float: left; }
   .col-sm-pull-0 {
     position: relative;
     left: 0%; }
@@ -1054,6 +1109,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-md-1:last-child:not(:first-child) {
       float: right; }
+    .col-md-1:last-child:last-child {
+      float: left; }
   .col-md-2 {
     width: 16.6666666667%;
     float: left;
@@ -1067,6 +1124,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-md-2:last-child:not(:first-child) {
       float: right; }
+    .col-md-2:last-child:last-child {
+      float: left; }
   .col-md-3 {
     width: 25%;
     float: left;
@@ -1080,6 +1139,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-md-3:last-child:not(:first-child) {
       float: right; }
+    .col-md-3:last-child:last-child {
+      float: left; }
   .col-md-4 {
     width: 33.3333333333%;
     float: left;
@@ -1093,6 +1154,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-md-4:last-child:not(:first-child) {
       float: right; }
+    .col-md-4:last-child:last-child {
+      float: left; }
   .col-md-5 {
     width: 41.6666666667%;
     float: left;
@@ -1106,6 +1169,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-md-5:last-child:not(:first-child) {
       float: right; }
+    .col-md-5:last-child:last-child {
+      float: left; }
   .col-md-6 {
     width: 50%;
     float: left;
@@ -1119,6 +1184,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-md-6:last-child:not(:first-child) {
       float: right; }
+    .col-md-6:last-child:last-child {
+      float: left; }
   .col-md-7 {
     width: 58.3333333333%;
     float: left;
@@ -1132,6 +1199,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-md-7:last-child:not(:first-child) {
       float: right; }
+    .col-md-7:last-child:last-child {
+      float: left; }
   .col-md-8 {
     width: 66.6666666667%;
     float: left;
@@ -1145,6 +1214,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-md-8:last-child:not(:first-child) {
       float: right; }
+    .col-md-8:last-child:last-child {
+      float: left; }
   .col-md-9 {
     width: 75%;
     float: left;
@@ -1158,6 +1229,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-md-9:last-child:not(:first-child) {
       float: right; }
+    .col-md-9:last-child:last-child {
+      float: left; }
   .col-md-10 {
     width: 83.3333333333%;
     float: left;
@@ -1171,6 +1244,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-md-10:last-child:not(:first-child) {
       float: right; }
+    .col-md-10:last-child:last-child {
+      float: left; }
   .col-md-11 {
     width: 91.6666666667%;
     float: left;
@@ -1184,6 +1259,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-md-11:last-child:not(:first-child) {
       float: right; }
+    .col-md-11:last-child:last-child {
+      float: left; }
   .col-md-12 {
     width: 100%;
     float: left;
@@ -1197,6 +1274,8 @@ select {
 @media print, screen and (min-width: 40em) {
     .col-md-12:last-child:not(:first-child) {
       float: right; }
+    .col-md-12:last-child:last-child {
+      float: left; }
   .col-md-pull-0 {
     position: relative;
     left: 0%; }
@@ -1308,6 +1387,8 @@ select {
 @media print, screen and (min-width: 64em) {
     .col-lg-1:last-child:not(:first-child) {
       float: right; }
+    .col-lg-1:last-child:last-child {
+      float: left; }
   .col-lg-2 {
     width: 16.6666666667%;
     float: left;
@@ -1321,6 +1402,8 @@ select {
 @media print, screen and (min-width: 64em) {
     .col-lg-2:last-child:not(:first-child) {
       float: right; }
+    .col-lg-2:last-child:last-child {
+      float: left; }
   .col-lg-3 {
     width: 25%;
     float: left;
@@ -1334,6 +1417,8 @@ select {
 @media print, screen and (min-width: 64em) {
     .col-lg-3:last-child:not(:first-child) {
       float: right; }
+    .col-lg-3:last-child:last-child {
+      float: left; }
   .col-lg-4 {
     width: 33.3333333333%;
     float: left;
@@ -1347,6 +1432,8 @@ select {
 @media print, screen and (min-width: 64em) {
     .col-lg-4:last-child:not(:first-child) {
       float: right; }
+    .col-lg-4:last-child:last-child {
+      float: left; }
   .col-lg-5 {
     width: 41.6666666667%;
     float: left;
@@ -1360,6 +1447,8 @@ select {
 @media print, screen and (min-width: 64em) {
     .col-lg-5:last-child:not(:first-child) {
       float: right; }
+    .col-lg-5:last-child:last-child {
+      float: left; }
   .col-lg-6 {
     width: 50%;
     float: left;
@@ -1373,6 +1462,8 @@ select {
 @media print, screen and (min-width: 64em) {
     .col-lg-6:last-child:not(:first-child) {
       float: right; }
+    .col-lg-6:last-child:last-child {
+      float: left; }
   .col-lg-7 {
     width: 58.3333333333%;
     float: left;
@@ -1386,6 +1477,8 @@ select {
 @media print, screen and (min-width: 64em) {
     .col-lg-7:last-child:not(:first-child) {
       float: right; }
+    .col-lg-7:last-child:last-child {
+      float: left; }
   .col-lg-8 {
     width: 66.6666666667%;
     float: left;
@@ -1399,6 +1492,8 @@ select {
 @media print, screen and (min-width: 64em) {
     .col-lg-8:last-child:not(:first-child) {
       float: right; }
+    .col-lg-8:last-child:last-child {
+      float: left; }
   .col-lg-9 {
     width: 75%;
     float: left;
@@ -1412,6 +1507,8 @@ select {
 @media print, screen and (min-width: 64em) {
     .col-lg-9:last-child:not(:first-child) {
       float: right; }
+    .col-lg-9:last-child:last-child {
+      float: left; }
   .col-lg-10 {
     width: 83.3333333333%;
     float: left;
@@ -1425,6 +1522,8 @@ select {
 @media print, screen and (min-width: 64em) {
     .col-lg-10:last-child:not(:first-child) {
       float: right; }
+    .col-lg-10:last-child:last-child {
+      float: left; }
   .col-lg-11 {
     width: 91.6666666667%;
     float: left;
@@ -1438,6 +1537,8 @@ select {
 @media print, screen and (min-width: 64em) {
     .col-lg-11:last-child:not(:first-child) {
       float: right; }
+    .col-lg-11:last-child:last-child {
+      float: left; }
   .col-lg-12 {
     width: 100%;
     float: left;
@@ -1451,6 +1552,8 @@ select {
 @media print, screen and (min-width: 64em) {
     .col-lg-12:last-child:not(:first-child) {
       float: right; }
+    .col-lg-12:last-child:last-child {
+      float: left; }
   .col-lg-pull-0 {
     position: relative;
     left: 0%; }
@@ -1979,6 +2082,17 @@ button.list-group-item-danger {
     color: #1779ba; }
     .breadcrumb a:hover {
       text-decoration: underline; }
+
+table col[class*="col-"] {
+  position: static;
+  float: none !important;
+  display: table-column; }
+
+table td[class*="col-"],
+table th[class*="col-"] {
+  position: static;
+  float: none !important;
+  display: table-cell; }
 
 .center-block {
   display: block;

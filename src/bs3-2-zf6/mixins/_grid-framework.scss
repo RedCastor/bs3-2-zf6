@@ -23,6 +23,7 @@
   @if ($type == width) and ($index > 0) {
     .col-#{$class}-#{$index} {
       @include grid-col($index);
+      @include grid-column-end;
     }
   }
   @if ($type == push) and ($index >= 0) {
