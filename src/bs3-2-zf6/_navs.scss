@@ -14,6 +14,9 @@
 
   &.nav-justified {
     @include menu-expand;
+    >li>a {
+      text-align: center;
+    }
     &::before,
     &::after {
       content: none;

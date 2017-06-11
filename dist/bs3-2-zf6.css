@@ -1996,6 +1996,8 @@ button.list-group-item-danger {
   table-layout: fixed; }
   .nav.nav-justified > li:first-child:last-child {
     width: 100%; }
+  .nav.nav-justified > li > a {
+    text-align: center; }
   .nav.nav-justified::before, .nav.nav-justified::after {
     content: none; }
 
