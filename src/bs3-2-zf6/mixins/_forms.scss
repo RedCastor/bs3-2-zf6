@@ -1,0 +1,39 @@
+//
+// Forms Framework
+// --------------------------------------------------
+
+/// Color of labels prefixed to an input.
+/// @type Color
+$input-prefix-color: $black !default;
+
+/// Background color of labels prefixed to an input.
+/// @type Color
+$input-prefix-background: $light-gray !default;
+
+/// Border around labels prefixed to an input.
+/// @type Border
+$input-prefix-border: 1px solid $medium-gray !default;
+
+
+@mixin form-control-validation(
+  $border: $input-prefix-border,
+  $color: $input-prefix-color,
+  $background: $input-prefix-background
+) {
+
+  input {
+    border-color: $border;
+    color: $color;
+  }
+
+  // Set validation states also for addons
+  .input-group-addon {
+    color: $color;
+    border-color: $border;
+    background-color: $background;
+  }
+  // Optional feedback icon
+  .form-control-feedback {
+    color: $color;
+  }
+}

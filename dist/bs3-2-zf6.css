@@ -452,29 +452,88 @@ select {
     .btn.btn-link:hover {
       text-decoration: underline; }
 
-.form-group fieldset {
-  margin: 0;
-  padding: 0;
-  border: 0; }
-
-.form-group legend {
-  max-width: 100%;
-  margin-bottom: 0.5rem; }
-
-.form-group .fieldset {
-  margin: 1.125rem 0;
-  padding: 1.25rem;
-  border: 1px solid #cacaca; }
-  .form-group .fieldset legend {
+.form-group {
+  position: relative; }
+  .form-group fieldset {
     margin: 0;
-    margin-left: -0.1875rem;
-    padding: 0 0.1875rem;
-    background: #fefefe; }
+    padding: 0;
+    border: 0; }
+  .form-group legend {
+    max-width: 100%;
+    margin-bottom: 0.5rem; }
+  .form-group .fieldset {
+    margin: 1.125rem 0;
+    padding: 1.25rem;
+    border: 1px solid #cacaca; }
+    .form-group .fieldset legend {
+      margin: 0;
+      margin-left: -0.1875rem;
+      padding: 0 0.1875rem;
+      background: #fefefe; }
 
 .page-header {
   padding-bottom: 0.5rem;
   margin: 1.25rem auto;
   border-bottom: 1px solid #cacaca; }
+
+.has-feedback {
+  position: relative; }
+  .has-feedback input {
+    padding-right: 3.046875rem; }
+
+.form-control-feedback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 2.4375rem;
+  height: 2.4375rem;
+  line-height: 2.4375rem;
+  text-align: center;
+  pointer-events: none; }
+
+.has-success input {
+  border-color: #3c763d;
+  color: #3c763d; }
+
+.has-success .input-group-addon {
+  color: #3c763d;
+  border-color: #3c763d;
+  background-color: #dff0d8; }
+
+.has-success .form-control-feedback {
+  color: #3c763d; }
+
+.has-warning input {
+  border-color: #8a6d3b;
+  color: #8a6d3b; }
+
+.has-warning .input-group-addon {
+  color: #8a6d3b;
+  border-color: #8a6d3b;
+  background-color: #fcf8e3; }
+
+.has-warning .form-control-feedback {
+  color: #8a6d3b; }
+
+.has-error input {
+  border-color: #a94442;
+  color: #a94442; }
+
+.has-error .input-group-addon {
+  color: #a94442;
+  border-color: #a94442;
+  background-color: #f2dede; }
+
+.has-error .form-control-feedback {
+  color: #a94442; }
+
+.has-feedback label ~ .form-control-feedback {
+  top: 6rem; }
+
+.has-feedback label.sr-only ~ .form-control-feedback {
+  top: 0; }
 
 .list-unstyled {
   padding-left: 0;
