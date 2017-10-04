@@ -19,4 +19,4 @@ bower install bs3-2-zf6
 [Demo]: http://redcastor.github.io/bs3-2-zf6/demo/
 [Foundation 6]: https://foundation.zurb.com/sites/docs/
 [Bootstrap]: https://getbootstrap.com/
-[v1.0.0]: https://github.com/redcastor/bs3-2-zf6/releases/tag/v1.0.0
+[v1.1.0]: https://github.com/redcastor/bs3-2-zf6/releases/tag/v1.1.0

@@ -1,0 +1,59 @@
+//
+// Panels
+// @since 1.1.0
+// --------------------------------------------------
+
+
+// Base class
+.panel {
+  @include card-container;
+}
+
+
+// Panel contents
+.panel-body {
+  @include card-section;
+}
+
+// Optional heading, footer
+.panel-heading,
+.panel-footer {
+  @include card-divider;
+}
+
+// Optional Title
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: ceil(($global-font-size * 1.125));
+  color: inherit;
+
+  > a,
+  > small,
+  > .small,
+  > small > a,
+  > .small > a {
+    color: inherit;
+  }
+}
+
+
+// Contextual variations
+.panel-default {
+  @include panel-variant($card-divider-background, $card-font-color, $card-divider-background, $card-divider-background, 0%);
+}
+.panel-primary {
+  @include panel-variant($primary-color, $card-background, $primary-color, $primary-color, 0%);
+}
+.panel-success {
+  @include panel-variant($success-color, $success-color, $success-color, $success-color, 85%);
+}
+.panel-info {
+  @include panel-variant($secondary-color, $secondary-color, $secondary-color, $secondary-color, 85%);
+}
+.panel-warning {
+  @include panel-variant($warning-color, $warning-color, $warning-color, $warning-color, 85%);
+}
+.panel-danger {
+  @include panel-variant($alert-color, $alert-color, $alert-color, $alert-color, 85%);
+}

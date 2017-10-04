@@ -22,3 +22,11 @@
     padding-right: 5px;
   }
 }
+
+
+//==Typography
+.page-header {
+  padding-bottom: $header-margin-bottom;
+  margin: $hr-margin;
+  border-bottom: $hr-border;
+}

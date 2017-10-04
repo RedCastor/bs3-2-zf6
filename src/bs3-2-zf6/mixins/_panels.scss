@@ -1,0 +1,16 @@
+// Panels Mixins
+// @since 1.1.0
+@mixin panel-variant($border, $heading-text-color, $heading-bg-color, $heading-border, $lightness-boder) {
+  border-color: scale-color($border, $lightness: $lightness-boder);
+
+  & > .panel-heading {
+    color: $heading-text-color;
+    background-color: scale-color($heading-bg-color, $lightness: $lightness-boder);
+    border-color: scale-color($heading-border, $lightness: $lightness-boder);;
+  }
+  & > .panel-footer {
+    + .panel-body {
+      border-bottom-color: scale-color($border, $lightness: $lightness-boder);
+    }
+  }
+}

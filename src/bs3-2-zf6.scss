@@ -1,6 +1,6 @@
 /**
  * Bootstrap 3 to Foundation 6 by RedCastor
- * Version 1.0.0
+ * Version 1.1.0
  * redcastor.io
  * Licensed under MIT Open Source
  */
@@ -11,6 +11,7 @@
 @import "bs3-2-zf6/mixins/list-group";
 @import "bs3-2-zf6/mixins/image";
 @import "bs3-2-zf6/mixins/forms";
+@import "bs3-2-zf6/mixins/panels";
 
 // Core CSS
 @import "bs3-2-zf6/buttons";
@@ -25,6 +26,7 @@
 @import "bs3-2-zf6/list-group";
 @import "bs3-2-zf6/navs";
 @import "bs3-2-zf6/pagination";
+@import "bs3-2-zf6/panels";
 @import "bs3-2-zf6/close";
 @import "bs3-2-zf6/breadcrumbs";
 @import "bs3-2-zf6/tables";

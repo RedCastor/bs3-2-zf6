@@ -16,14 +16,6 @@
   @extend .input-group-button;
 }
 
-//==Typography
-.page-header {
-  padding-bottom: $header-margin-bottom;
-  margin: $hr-margin;
-  border-bottom: $hr-border;
-}
-
-
 
 // Form control feedback states
 //
@@ -78,4 +70,9 @@
 // [converter] extracted as `@mixin form-inline` for libsass compatibility
 .form-inline {
   @include form-inline;
+
+  label {
+    display: inline-block;
+    margin: 0 0 $form-spacing;
+  }
 }
