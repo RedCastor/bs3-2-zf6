@@ -5,7 +5,11 @@
 
 .nav {
   @extend .menu;
-  @extend .menu-hover;
+
+  li:hover {
+    background-color: $menu-item-background-hover;
+  }
+
   @include clearfix;
 
   &.nav-stacked {
