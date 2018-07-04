@@ -51,70 +51,21 @@ $input-prefix-border: 1px solid $medium-gray !default;
 // Heads up! This is mixin-ed into `.navbar-form` in navbars.less.
 
 // [converter] extracted from `.form-inline` for libsass compatibility
-@mixin form-inline {
+@mixin form-inline-bs {
 
   // Kick in the inline
   @include breakpoint(medium) {
-    // Inline-block all the things for "inline"
-    .form-group {
-      display: inline-block;
-      margin-bottom: 0;
-      vertical-align: middle;
-    }
 
-    // In navbar-form, allow folks to *not* use `.form-group`
-    .form-control, input, select, textarea {
+    @include form-inline;
+
+    label {
       display: inline-block;
-      width: auto; // Prevent labels from stacking above inputs in `.form-group`
-      vertical-align: middle;
+      margin: 0 0 $form-spacing;
     }
 
     // Make static controls behave like regular ones
     .form-control-static {
       display: inline-block;
-    }
-
-    .input-group {
-      display: inline-table;
-      vertical-align: middle;
-
-      .input-group-addon,
-      .input-group-btn,
-      .form-control, input, select, textarea {
-        width: auto;
-      }
-    }
-
-    // Input groups need that 100% width though
-    .input-group > .form-control,
-    .input-group > input,
-    .input-group > select,
-    .input-group > textarea {
-      width: 100%;
-    }
-
-    .control-label {
-      margin-bottom: 0;
-      vertical-align: middle;
-    }
-
-    // Remove default margin on radios/checkboxes that were used for stacking, and
-    // then undo the floating of radios and checkboxes to match.
-    .radio,
-    .checkbox {
-      display: inline-block;
-      margin-top: 0;
-      margin-bottom: 0;
-      vertical-align: middle;
-
-      label {
-        padding-left: 0;
-      }
-    }
-    .radio input[type="radio"],
-    .checkbox input[type="checkbox"] {
-      position: relative;
-      margin-left: 0;
     }
 
     // Re-override the feedback icon.

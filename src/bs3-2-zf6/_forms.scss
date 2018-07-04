@@ -69,10 +69,5 @@
 
 // [converter] extracted as `@mixin form-inline` for libsass compatibility
 .form-inline {
-  @include form-inline;
-
-  label {
-    display: inline-block;
-    margin: 0 0 $form-spacing;
-  }
+  @include form-inline-bs;
 }
