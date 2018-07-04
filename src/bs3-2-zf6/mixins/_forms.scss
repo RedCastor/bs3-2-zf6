@@ -58,6 +58,19 @@ $input-prefix-border: 1px solid $medium-gray !default;
 
     @include form-inline;
 
+    // Input groups need that 100% width though
+    .input-group > .form-control,
+    .input-group > input,
+    .input-group > select,
+    .input-group > textarea {
+      width: 100%;
+    }
+
+    .control-label {
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
     label {
       display: inline-block;
       margin: 0 0 $form-spacing;

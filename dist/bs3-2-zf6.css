@@ -683,6 +683,14 @@ select {
     padding-left: 0; } }
 
 @media print, screen and (min-width: 40em) {
+  .form-inline .input-group > .form-control,
+  .form-inline .input-group > input,
+  .form-inline .input-group > select,
+  .form-inline .input-group > textarea {
+    width: 100%; }
+  .form-inline .control-label {
+    margin-bottom: 0;
+    vertical-align: middle; }
   .form-inline label {
     display: inline-block;
     margin: 0 0 1rem; }
